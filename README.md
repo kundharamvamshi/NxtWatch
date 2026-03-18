@@ -12,10 +12,10 @@ The project uses ESLint for code quality.
 
 ## Run Locally
 
-Install dependencies with `npm install`.
-Start the dev server with `npm run dev`.
-Build for production with `npm run build`.
+--Install dependencies with `npm install`.
+--Start the dev server with `npm run dev`.
+--Build for production with `npm run build`.
 
 # Demo Login Credentials
-username: rahul
-password: rahul@2021
+--username: rahul
+--password: rahul@2021
