@@ -40,6 +40,7 @@ export const TrendingContainer = styled.div`
   background-color: ${props => (props.isDark ? '#181818' : '#f9f9f9')};
   color: ${props => (props.isDark ? '#f8fafc' : '#181818')};
   flex: 1;
+  position: static;
   min-height: calc(100vh - 61px);
 `
 
