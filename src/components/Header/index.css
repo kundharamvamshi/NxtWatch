@@ -109,6 +109,8 @@
 
 .mobile-menu-drawer {
   position: fixed;
+  inset: 0;
+  z-index: 21;
   padding: 18px 24px 28px;
   display: flex;
   flex-direction: column;
