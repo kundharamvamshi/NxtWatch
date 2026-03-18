@@ -1,0 +1,269 @@
+.home-bottom {
+  display: flex;
+  width: 100%;
+}
+
+.home-page {
+  flex: 1;
+}
+
+.home-banner {
+  min-height: 230px;
+  align-items: flex-start;
+}
+
+.home-banner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+  max-width: 340px;
+}
+
+.home-banner-logo {
+  width: 165px;
+}
+
+.home-banner-text {
+  font-size: 30px;
+  line-height: 1.45;
+  color: #1e293b;
+}
+
+.home-banner-btn {
+  min-width: 148px;
+  padding: 13px 20px;
+  border: 1px solid #334155;
+  background: transparent;
+  color: #0f172a;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.banner-close-btn {
+  background: transparent;
+  border: 0;
+  align-self: flex-start;
+  font-size: 24px;
+  color: #1f2937;
+  cursor: pointer;
+}
+
+.home-content {
+  min-height: calc(100vh - 291px);
+  padding: 28px 32px 40px;
+}
+
+.home-content-light {
+  background-color: #f9f9f9;
+}
+
+.home-content-dark {
+  background-color: #181818;
+}
+
+.search-container {
+  display: flex;
+  width: min(100%, 520px);
+  margin-bottom: 28px;
+}
+
+.search-input {
+  flex: 1;
+  height: 42px;
+  padding: 0 14px;
+  border: 1px solid #cbd5e1;
+  background-color: transparent;
+  color: inherit;
+  font-size: 15px;
+}
+
+.home-content-dark .search-input {
+  border-color: #475569;
+}
+
+.search-btn {
+  width: 72px;
+  border: 1px solid #cbd5e1;
+  border-left: 0;
+  background-color: #ebebeb;
+  color: #64748b;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.home-content-dark .search-btn {
+  border-color: #475569;
+  background-color: #313131;
+}
+
+.home-videos-list {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 42px 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.home-video-card {
+  list-style-type: none;
+}
+
+.home-video-link {
+  text-decoration: none;
+  display: block;
+}
+
+.thumbnail {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.video-item-bottom {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 12px;
+  text-align: left;
+}
+
+.channel-image {
+  border-radius: 999px;
+  height: 36px;
+  width: 36px;
+  flex-shrink: 0;
+}
+
+.home-video-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.home-video-title {
+  font-size: 16px;
+  line-height: 1.45;
+  font-weight: 500;
+}
+
+.home-video-channel,
+.home-video-stats {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.home-content-dark .home-video-channel,
+.home-content-dark .home-video-stats {
+  color: #94a3b8;
+}
+
+.view-time {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.empty-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 18px;
+  padding: 44px 24px 56px;
+}
+
+.empty-container img {
+  width: min(100%, 320px);
+}
+
+.empty-container h1 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.empty-container p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #64748b;
+  max-width: 420px;
+}
+
+.home-content-dark .empty-container p {
+  color: #94a3b8;
+}
+
+@media (max-width: 767px) {
+  .home-banner {
+    min-height: 220px;
+    padding: 24px 20px;
+  }
+
+  .home-banner-logo {
+    width: 135px;
+  }
+
+  .home-banner-text {
+    font-size: 17px;
+    line-height: 1.6;
+    max-width: 210px;
+  }
+
+  .home-banner-btn {
+    min-width: 126px;
+    padding: 11px 16px;
+    font-size: 17px;
+  }
+
+  .home-content {
+    min-height: calc(100vh - 281px);
+    padding: 24px 20px 36px;
+  }
+
+  .search-container {
+    width: 100%;
+    margin-bottom: 26px;
+  }
+
+  .search-input {
+    height: 38px;
+    font-size: 14px;
+  }
+
+  .search-btn {
+    width: 56px;
+  }
+
+  .list {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 14px;
+  }
+
+  .home-video-title {
+    font-size: 15px;
+  }
+
+  .home-video-channel,
+  .home-video-stats {
+    font-size: 13px;
+  }
+
+  .video-item-bottom {
+    gap: 10px;
+  }
+
+  .channel-image {
+    width: 30px;
+    height: 30px;
+  }
+
+  .empty-container h1 {
+    font-size: 24px;
+  }
+
+  .empty-container p {
+    font-size: 16px;
+  }
+}

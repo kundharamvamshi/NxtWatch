@@ -1,0 +1,100 @@
+.login-form-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.login-page-light {
+  background-color: #f9f9f9;
+}
+
+.login-page-dark {
+  background-color: #231f20;
+}
+
+.login-card {
+  width: min(100%, 460px);
+  padding: 42px 36px 36px;
+  border-radius: 12px;
+  background-color: inherit;
+  box-shadow: var(--soft-shadow);
+}
+
+.login-logo {
+  width: 168px;
+  display: block;
+  margin: 0 auto 24px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.login-form label {
+  font-size: 13px;
+  font-weight: 700;
+  color: #64748b;
+}
+
+.login-input {
+  width: 100%;
+  height: 42px;
+  padding: 0 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 2px;
+  background-color: transparent;
+  color: inherit;
+  font-size: 16px;
+}
+
+.show-password-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.login-error {
+  color: #ff0b37;
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.login-card-light {
+  background-color: #ffffff;
+}
+
+.login-card-dark {
+  background-color: #0f0f0f;
+  box-shadow: none;
+}
+
+.show-password-row label {
+  color: inherit;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.login-page-dark .login-form label,
+.login-page-dark .show-password-row label {
+  color: #f8fafc;
+}
+
+.login-page-dark .login-input {
+  border-color: #475569;
+}
+
+@media (max-width: 767px) {
+  .login-card {
+    width: min(100%, 360px);
+    padding: 32px 18px;
+  }
+
+  .login-logo {
+    width: 142px;
+    margin-bottom: 18px;
+  }
+}

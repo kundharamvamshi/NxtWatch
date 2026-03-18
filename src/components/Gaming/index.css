@@ -1,0 +1,88 @@
+.gaming-bottom {
+  display: flex;
+  width: 100%;
+}
+
+.gaming-page-light {
+  background-color: #f9f9f9;
+}
+
+.gaming-page-dark {
+  background-color: #181818;
+}
+
+.gaming-container {
+  background-color: #f1f5f9;
+}
+
+.gaming-page-dark .gaming-container {
+  background-color: #231f20;
+}
+
+.gaming-results {
+  padding: 24px 20px 32px;
+}
+
+.gaming-videos-list {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 34px 18px;
+  padding: 0;
+  margin: 0;
+}
+
+.gaming-card {
+  list-style-type: none;
+}
+
+.gaming-card-link {
+  text-decoration: none;
+  display: block;
+}
+
+.gaming-image {
+  width: 100%;
+  aspect-ratio: 0.78;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.gaming-video-title {
+  margin-top: 14px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+.gaming-watchers {
+  margin-top: 8px;
+  font-size: 17px;
+  color: #64748b;
+  line-height: 1.5;
+}
+
+.gaming-page-dark .gaming-watchers {
+  color: #94a3b8;
+}
+
+@media (max-width: 767px) {
+  .gaming-results {
+    padding: 22px 14px 28px;
+  }
+
+  .gaming-videos-list {
+    grid-template-columns: 1fr 1fr;
+    gap: 28px 16px;
+  }
+
+  .gaming-video-title {
+    margin-top: 10px;
+    font-size: 15px;
+  }
+
+  .gaming-watchers {
+    margin-top: 4px;
+    font-size: 13px;
+  }
+}

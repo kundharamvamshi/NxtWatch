@@ -1,0 +1,134 @@
+.saved-bottom {
+  display: flex;
+  width: 100%;
+}
+
+.saved-page-light {
+  background-color: #f9f9f9;
+}
+
+.saved-page-dark {
+  background-color: #181818;
+}
+
+.saved-container {
+  background-color: #f1f5f9;
+}
+
+.saved-page-dark .saved-container {
+  background-color: #231f20;
+}
+
+.saved-videos-list {
+  padding: 24px 0 0;
+}
+
+.saved-image {
+  width: 420px;
+  max-width: 42%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.saved-video-list-item {
+  list-style-type: none;
+}
+
+.saved-video-link {
+  display: flex;
+  gap: 18px;
+  text-align: left;
+  text-decoration: none;
+  padding: 0 32px 28px;
+}
+
+.saved-video-meta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.saved-video-title {
+  font-size: 24px;
+  line-height: 1.45;
+  font-weight: 500;
+}
+
+.saved-video-channel,
+.saved-video-stats {
+  font-size: 18px;
+  color: #64748b;
+}
+
+.saved-page-dark .saved-video-channel,
+.saved-page-dark .saved-video-stats {
+  color: #94a3b8;
+}
+
+.saved-empty-state {
+  min-height: calc(100vh - 160px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 24px 56px;
+}
+
+.saved-empty-image {
+  width: min(100%, 360px);
+}
+
+.saved-empty-title {
+  margin-top: 28px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.saved-empty-description {
+  margin-top: 14px;
+  color: #64748b;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.saved-page-dark .saved-empty-description {
+  color: #94a3b8;
+}
+
+@media (max-width: 767px) {
+  .saved-videos-list {
+    padding-top: 0;
+  }
+
+  .saved-video-link {
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px 0 0;
+  }
+
+  .saved-image {
+    width: 100%;
+    max-width: none;
+  }
+
+  .saved-video-meta {
+    padding: 0 16px 24px;
+    gap: 8px;
+  }
+
+  .saved-video-title {
+    font-size: 16px;
+  }
+
+  .saved-video-channel,
+  .saved-video-stats,
+  .saved-empty-description {
+    font-size: 14px;
+  }
+
+  .saved-empty-title {
+    font-size: 24px;
+  }
+}

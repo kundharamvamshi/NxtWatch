@@ -1,0 +1,107 @@
+.trending-bottom {
+  display: flex;
+  width: 100%;
+}
+
+.trending-page-light {
+  background-color: #f9f9f9;
+}
+
+.trending-page-dark {
+  background-color: #181818;
+}
+
+.trending-container {
+  background-color: #f1f5f9;
+}
+
+.trending-page-dark .trending-container {
+  background-color: #231f20;
+}
+
+.trending-results {
+  padding: 24px 32px 40px;
+}
+
+.trending-videos-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin: 0;
+  padding: 0;
+}
+
+.trending-list-item {
+  list-style-type: none;
+}
+
+.trending-card-link {
+  display: flex;
+  gap: 18px;
+  text-decoration: none;
+}
+
+.trending-thumbnail {
+  width: 420px;
+  max-width: 42%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.trending-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  text-align: left;
+}
+
+.trending-video-title {
+  font-size: 24px;
+  line-height: 1.45;
+  font-weight: 500;
+}
+
+.trending-channel-name,
+.trending-video-stats {
+  color: #64748b;
+  font-size: 18px;
+}
+
+.trending-page-dark .trending-channel-name,
+.trending-page-dark .trending-video-stats {
+  color: #94a3b8;
+}
+
+@media (max-width: 767px) {
+  .trending-results {
+    padding: 20px 0 32px;
+  }
+
+  .trending-card-link {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .trending-thumbnail {
+    width: 100%;
+    max-width: none;
+    border-radius: 0;
+  }
+
+  .trending-meta {
+    padding: 0 16px;
+    gap: 8px;
+  }
+
+  .trending-video-title {
+    font-size: 16px;
+  }
+
+  .trending-channel-name,
+  .trending-video-stats {
+    font-size: 14px;
+  }
+}
