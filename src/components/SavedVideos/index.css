@@ -13,6 +13,8 @@
 
 .saved-container {
   background-color: #f1f5f9;
+  position: static;
+  margin-bottom: 20px;
 }
 
 .saved-page-dark .saved-container {
