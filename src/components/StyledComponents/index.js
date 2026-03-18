@@ -13,6 +13,7 @@ export const HeaderContainer = styled.div`
   border-bottom: 1px solid ${props => (props.isDark ? '#313131' : '#ebebeb')};
   position: sticky;
   top: 0;
+  z-index: 10;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
 `
@@ -40,7 +41,6 @@ export const TrendingContainer = styled.div`
   background-color: ${props => (props.isDark ? '#181818' : '#f9f9f9')};
   color: ${props => (props.isDark ? '#f8fafc' : '#181818')};
   flex: 1;
-  position: static;
   min-height: calc(100vh - 61px);
 `
 

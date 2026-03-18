@@ -79,8 +79,8 @@ h3 {
   gap: 18px;
   padding: 18px 24px;
   position: sticky;
-  top: 0;
-  z-index: 4;
+  top: 61px;
+  z-index: 5;
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
 }
@@ -178,6 +178,7 @@ h3 {
   .page-header-strip {
     gap: 14px;
     padding: 14px 18px;
+    top: 61px;
   }
 
   .page-header-icon {

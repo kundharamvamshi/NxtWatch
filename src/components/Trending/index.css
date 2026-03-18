@@ -3,20 +3,10 @@
   width: 100%;
 }
 
-.trending-page-light {
-  background-color: #f9f9f9;
-}
-
-.trending-page-dark {
-  background-color: #181818;
-}
-
-.trending-container {
+.saved-container {
   background-color: #f1f5f9;
-}
-
-.trending-page-dark .trending-container {
-  background-color: #231f20;
+  position: static;
+  margin-bottom: 20px;
 }
 
 .trending-results {
@@ -90,6 +80,7 @@
     max-width: none;
     border-radius: 0;
   }
+
 
   .trending-meta {
     padding: 0 16px;

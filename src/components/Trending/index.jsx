@@ -97,13 +97,11 @@ const Trending = () => {
           data-testid="trending"
           className={`trending-page ${isDark ? 'trending-page-dark' : 'trending-page-light'}`}
         >
-          <div className="trending-container page-header-strip">
-            <div
-              className={`page-header-icon ${isDark ? 'page-header-icon-dark' : 'page-header-icon-light'}`}
-            >
+          <div className="saved-container page-header-strip">
+            <div className={`page-header-icon ${isDark ? 'page-header-icon-dark' : 'page-header-icon-light'}`}>
               <FaFire />
             </div>
-            <p className="page-header-title">Trending</p>
+            <h1 className="page-header-title">Trending</h1>
           </div>
           <div className="trending-results">{renderTrendingVideos()}</div>
         </TrendingContainer>
